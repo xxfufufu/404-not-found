@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+body {
+    padding: 20px;
+}
+
+header h1 {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 200px;
+    grid-column-gap: 100px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content h1 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    margin-top: -20px;
+    color: #333;
+}
+.content p {
+    margin: 36px 0 64px 0;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    width: 381px;
+    height: 108px;
+}
+
+.content input {
+    width: 216px;
+    height: 68px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    background-color: #333;
+    cursor: pointer;
+}
+.content input:hover {
+    background-color: rgb(78, 77, 77);
+}
+footer {
+    color: rgb(105, 104, 104);
+    display: flex;
+    margin: 200px 0 20px 0;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1040px){
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+    .content {  
+        grid-column: 2/3;}
+}
